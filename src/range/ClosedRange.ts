@@ -21,6 +21,18 @@ export default class ClosedRange<T extends INumericallyComparable> implements IR
         return value >= this.lower && value <= this.upper
     }
 
+    public clamp(value: T) {
+        if (value < this.lower) {
+            return this.lower
+        }
+
+        if (value > this.upper) {
+            return this.upper
+        }
+
+        return value
+    }
+
     public containsRange(range: IRange<T>) {
         return this.containsValue(range.lower) && this.containsValue(range.upper)
     }

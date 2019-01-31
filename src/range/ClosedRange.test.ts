@@ -3,6 +3,32 @@ import Range from './Range'
 
 // tslint:disable:no-magic-numbers
 describe('Range', () => {
+    describe('clamp', () => {
+        it('should clamp to lower bound if value is too small', () => {
+            expect(
+                ClosedRange.fromTo(100, 200)
+                    .clamp(50)
+            )
+                .toEqual(100)
+        })
+
+        it('should clamp to upper bound if value is too small', () => {
+            expect(
+                ClosedRange.fromTo(100, 200)
+                    .clamp(250)
+            )
+                .toEqual(200)
+        })
+
+        it('should return value unchanged if it is within the range', () => {
+            expect(
+                ClosedRange.fromTo(100, 200)
+                    .clamp(150)
+            )
+                .toEqual(150)
+        })
+    })
+
     describe('containsRange', () => {
         it('should return true if it wholly encloses the other', () => {
 
