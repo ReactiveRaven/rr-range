@@ -1,0 +1,42 @@
+{
+  "name": "rr-range",
+  "keywords": [
+    "range",
+    "closedrange",
+    "openrange",
+    "typescript"
+  ],
+  "version": "0.1.0",
+  "private": false,
+  "license": "MIT",
+  "main": "lib/entrypoint.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reactiveraven/ranges.git"
+  },
+  "types": "lib/entrypoint.d.ts",
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "npm run clean && npm run test:once && npm run build:lib && npm run build:umd",
+    "build:lib": "./node_modules/.bin/tsc --outDir lib --module commonjs",
+    "build:es": "./node_modules/.bin/tsc --outDir es --module es2015",
+    "build:umd": "npm run build:es && dts-bundle --name dist/bundle --main es --outputAsModuleFolder",
+    "clean": "rimraf dist es lib coverage",
+    "test": "react-scripts-ts test --env=jsdom",
+    "test:once": "CI=true react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject",
+    "postbuild": "rimraf {lib,es}/**/__tests__ {lib,es}/**/*.{spec,test}.{js,d.ts,js.map}"
+  },
+  "dependencies": {},
+  "peerDependencies": {},
+  "devDependencies": {
+    "@types/jest": "^23.3.11",
+    "@types/node": "^10.12.18",
+    "@types/sinon": "^5.0.7",
+    "dts-bundle": "^0.7.3",
+    "pascal-case": "^2.0.1",
+    "react-scripts-ts": "^4.0.8",
+    "sinon": "^6.3.5",
+    "typescript": "^3.1.6"
+  }
+}
