@@ -9,12 +9,12 @@
   "version": "0.1.0",
   "private": false,
   "license": "MIT",
-  "main": "lib/entrypoint.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/reactiveraven/ranges.git"
   },
-  "types": "lib/entrypoint.d.ts",
+  "types": "lib/index.d.ts",
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "npm run clean && npm run test:once && npm run build:lib && npm run build:umd",
