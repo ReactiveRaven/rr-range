@@ -25,8 +25,8 @@ export default class ClosedRange<T extends INumericallyComparable> implements IR
         return this.containsValue(range.lower) && this.containsValue(range.upper)
     }
 
-    public overlapsRange(range: IRange<T>) {
-        return this.containsValue(range.lower) || this.containsValue(range.upper)
+    public overlapsRange(otherRange: IRange<T>) {
+        return otherRange.containsValue(this.lower) || otherRange.containsValue(this.upper)
     }
 
     public union(otherRange: ClosedRange<T>) {
