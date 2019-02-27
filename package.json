@@ -32,7 +32,7 @@
   "devDependencies": {
     "@types/jest": "^23.3.14",
     "@types/node": "^10.12.24",
-    "@types/sinon": "^7.0.7",
+    "@types/sinon": "^7.0.8",
     "dts-bundle": "^0.7.3",
     "pascal-case": "^2.0.1",
     "react-scripts-ts": "^4.0.8",
