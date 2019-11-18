@@ -31,7 +31,7 @@
   "peerDependencies": {},
   "devDependencies": {
     "@types/jest": "^23.3.14",
-    "@types/node": "^10.12.24",
+    "@types/node": "^12.12.9",
     "@types/sinon": "^7.5.0",
     "dts-bundle": "^0.7.3",
     "pascal-case": "^2.0.1",
