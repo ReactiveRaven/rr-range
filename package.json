@@ -34,7 +34,7 @@
     "@types/node": "^10.12.24",
     "@types/sinon": "^7.5.0",
     "dts-bundle": "^0.7.3",
-    "pascal-case": "^2.0.1",
+    "pascal-case": "^3.0.0",
     "react-scripts-ts": "^4.0.8",
     "sinon": "^7.5.0",
     "typescript": "^3.7.2"
