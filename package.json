@@ -37,6 +37,6 @@
     "pascal-case": "^3.1.1",
     "react-scripts-ts": "^4.0.8",
     "sinon": "^8.1.1",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.6"
   }
 }
