@@ -30,7 +30,7 @@
   "dependencies": {},
   "peerDependencies": {},
   "devDependencies": {
-    "@types/jest": "^26.0.19",
+    "@types/jest": "^26.0.20",
     "@types/node": "^14.14.10",
     "@types/sinon": "^9.0.10",
     "dts-bundle": "^0.7.3",
